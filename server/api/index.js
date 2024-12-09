@@ -7,7 +7,7 @@ const userRoutes = require("./routes/userRoutes");
 const startApiServer = (app) => {
   app.use(
     cors({
-      origin: ["http://localhost:5173","https://multio.netlify.app"],
+      origin: ["http://localhost:5173","https://https://multio-c.onrender.com"],
       credentials: true,
     })
   );
