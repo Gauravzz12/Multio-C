@@ -32,7 +32,7 @@ const generateUniqueUsername = async (baseUsername) => {
 
 const redirect_URL =
   process.env.NODE_ENV === "production"
-    ? "https://https://multio-c.onrender.com"
+    ? "https://multio-c.onrender.com"
     : "http://localhost:5173";
 passport.use(
   new GoogleStrategy(
@@ -41,7 +41,7 @@ passport.use(
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
       callbackURL:
         process.env.NODE_ENV === "production"
-          ? "https://https://multio-c.onrender.com/auth/google/callback"
+          ? "https://multio-c.onrender.com/auth/google/callback"
           : "http://localhost:5000/auth/google/callback",
     },
     async (accessToken, refreshToken, profile, done) => {
@@ -79,7 +79,7 @@ passport.use(
       clientSecret: process.env.GITHUB_CLIENT_SECRET,
       callbackURL:
         process.env.NODE_ENV === "production"
-          ? "https://https://multio-c.onrender.com/auth/github/callback"
+          ? "https://multio-c.onrender.com/auth/github/callback"
           : "http://localhost:5000/auth/github/callback",
     },
     async (accessToken, refreshToken, profile, done) => {

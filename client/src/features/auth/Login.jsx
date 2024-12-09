@@ -67,14 +67,14 @@ export const Login = () => {
     window.location.href =
       import.meta.env.MODE === "development"
         ? "http://localhost:5000/auth/google"
-        : "https://https://multio-c.onrender.com/auth/google";
+        : "https://multio-c.onrender.com/auth/google";
   };
 
   const handleGithubLogin = () => {
     window.location.href =
       import.meta.env.MODE === "development"
         ? "http://localhost:5000/auth/github"
-        : "https://https://multio-c.onrender.com/auth/github";
+        : "https://multio-c.onrender.com/auth/github";
   };
 
   return isLoading ? (

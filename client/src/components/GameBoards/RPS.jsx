@@ -39,7 +39,7 @@ const RPS = () => {
     const newSocket = io(
       import.meta.env.MODE === "development"
         ? "http://localhost:5000/rps"
-        : "https://https://multio-c.onrender.com/rps"
+        : "https://multio-c.onrender.com/rps"
     );
     setSocket(newSocket);
 
